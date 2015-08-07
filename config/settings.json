@@ -1,0 +1,8 @@
+{
+    "private": {
+        "s3": {
+            "AWSAccessKeyId": "id_here",
+            "AWSSecretAccessKey": "key_here"
+        }
+    }
+}

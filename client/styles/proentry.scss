@@ -1,0 +1,161 @@
+/* CSS declarations go here */
+
+$sectionSpacing: 35px;
+$dataSpacing: 30px;
+
+body {
+    padding: 80px 0;
+    font-size: 135%;
+}
+
+h3 {
+    padding-bottom: 5px;
+    margin-bottom: $sectionSpacing;
+    border-bottom: 2px solid #dddddd;
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    margin-bottom: $dataSpacing;
+}
+
+fieldset {
+    margin-bottom: $dataSpacing;
+}
+
+.controlroom form {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px dotted #cccccc;
+
+    .h4 {
+        border-bottom: 2px solid #cccccc;
+    }
+
+    label {
+        width: 135px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        height: 26px;
+        display: inline-block;
+        min-width: 180px;
+        max-width: 70%;
+    }
+
+    .select2-container {
+        display: inline-block;
+        min-width: 180px;
+        max-width: 70%;
+    }
+
+    .list-group .form-control {
+        min-width: 150px;
+        max-width: 100%;
+    }
+
+    .help-block {
+        padding-left: 140px;
+    }
+
+    fieldset {
+        border: 1px solid #cccccc;
+        background-color: transparent;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        legend {
+            display: inline-block;
+            width: auto;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 0;
+            padding: 0 10px;
+            margin-left: 10px;
+        }
+
+        label {
+            width: 114px;
+        }
+
+        .form-group {
+            padding-left: 20px;
+        }
+
+        .help-block {
+            padding-left: 120px;
+        }
+    }
+
+    .menu {
+        margin-top: $dataSpacing;
+    }
+}
+
+.products {
+    margin-bottom: $sectionSpacing;
+
+    .publish-false {
+        color: darkgrey;
+    }
+
+}
+
+.product {
+    display: inline-block;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: $dataSpacing;
+    width: 30%;
+    min-width: 280px;
+    margin-right: $sectionSpacing;
+    vertical-align: top;
+
+    .caption {
+        display: block;
+        font-size: 12px;
+        color: darkgray;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin-top: 0;
+        line-height: 1.15;
+    }
+}
+
+.product.large {
+    min-width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+
+    .productInfo {
+        height: auto;
+    }
+}
+
+.productInfo.hasImage {
+    height: 330px;
+
+    .productImage {
+        display: block;
+        width: auto;
+        height: 150px;
+        margin: 20px auto;
+    }
+}
+
+/* custom/overide bootstrap3 */
+.btn-xll {
+    padding: 8px 14px;
+} 
+
+

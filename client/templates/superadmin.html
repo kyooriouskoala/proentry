@@ -1,0 +1,11 @@
+<template name="admin">
+    
+    {{#if isInRole 'admin'}}
+    <div class="admin page controlroom">
+        {{> productForm}}
+        {{> recentlyAddedProducts}}
+        
+    </div>  
+    {{/if}}
+
+</template>

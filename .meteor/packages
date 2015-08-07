@@ -1,0 +1,27 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+aldeed:simple-schema
+timbrandin:autoform-slingshot
+accounts-facebook
+accounts-password
+accounts-twitter
+alanning:roles
+aldeed:autoform
+aldeed:autoform-bs-datepicker
+aldeed:collection2
+edgee:slingshot
+fourseven:scss
+iron:router
+momentjs:moment
+ongoworks:security
+rajit:bootstrap3-datepicker
+reactive-dict
+reactive-var
+twbs:bootstrap
+u2622:persistent-session
+useraccounts:bootstrap

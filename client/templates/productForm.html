@@ -1,0 +1,21 @@
+<template name="productForm">
+    
+    <div class="productForm">
+        {{#autoForm collections="Products" schema=productSchema id="productForm" type="method" meteormethod="addProduct"}}
+        <h4>Add Product</h4>
+        {{> afQuickField name="productTitle"}}
+        {{> afQuickField name="picture_url" id="uploadFile"}}
+        <!--<input id="file-picture_url" type="file" name="datafile" size="40">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%;">
+                <span class="sr-only">{{progress}}% Complete</span>
+            </div>
+        </div>-->
+        <div class="menu">
+            <button type="reset" class="btn btn-default">Clear</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        {{/autoForm}}
+    </div>
+
+</template>

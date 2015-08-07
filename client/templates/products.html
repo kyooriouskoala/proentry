@@ -1,0 +1,15 @@
+<template name="products">
+    <div class="products">
+        <h3>:: Recently added products</h3>
+        {{#each products}}
+            {{> product}}
+        {{/each}}
+        {{#if Template.subscriptionsReady}}
+        {{#if hasMoreProducts}}
+        <a class="load-more" href="#">Load More</a>
+        {{/if}}
+        {{else}}
+        <div class="loading">Loading</div>
+        {{/if}}
+    </div>
+</template>

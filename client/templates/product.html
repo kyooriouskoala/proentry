@@ -1,0 +1,41 @@
+<template name="product">
+    <div class="product {{#if enlargeLayout}}large{{/if}} {{#if addDeal}}editing{{/if}}">
+        
+        {{#if editProduct}}
+        
+            <div class="productInfo {{#if editProduct}}editing{{/if}}">
+                {{#autoForm collections="Products" schema=productSchema doc=this id="updateProductForm" type="method-update" meteormethod="updateProduct"}}
+                <h4>Edit Product</h4>
+                {{> afQuickField name="productTitle"}}
+                {{> afQuickField name="picture_url" id="uploadFile"}}
+                <!--<input id="file-picture_url" type="file" name="datafile" size="40">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%;">
+                        <span class="sr-only">{{progress}}% Complete</span>
+                    </div>
+                </div>-->
+                {{> afQuickField name="published"}}
+                <div class="menu">
+                    <a class="cancel btn btn-default btn-xs">Cancel</a>
+                    <button type="submit" class="btn btn-primary btn-xs">Submit</button>
+                </div>
+                {{/autoForm}}
+            </div>
+        
+        {{else}}
+        
+        <div class="productInfo {{#if picture_url}}hasImage{{/if}}">
+                <p class="caption">Product ID: {{_id}}</p>
+            {{#if picture_url}}<img class="productImage" src="{{picture_url}}" title="{{productTitle}}"/>{{/if}}
+                <h4>{{productTitle}}
+                </h4>
+                <div class="menu">
+                    <button type="delete" class="btn btn-default btn-xs">Delete</button>
+                    <button type="edit" class="btn btn-default btn-xs">✍ Edit</button>
+                </div>
+            </div>
+        
+        {{/if}}<!-- END editProduct -->
+        
+    </div>
+</template>
